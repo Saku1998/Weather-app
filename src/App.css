@@ -1,0 +1,214 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Lobster', cursive;
+}
+.App{
+  background: url("images/sky.webp");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+.main-div{
+  height: 100vh;
+  background: url("images/sky.webp");
+  background-size: cover;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+}
+.main-div-ui{
+  border-radius: 20px;
+  border: 4px solid white;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+}
+.main-div-ui h1{
+  font-size: 40px;
+}
+.main-div-ui-search{
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+}
+.main-div-ui-inputs-btn{
+  background: white;
+  border-left: 1px solid gray;
+  border: 1px solid black;
+  justify-content: center;
+  height: 25%;
+  width: 10%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+.main-div-ui-title{
+  justify-content: space-around;
+}
+.cityInput{
+  padding: 15px;
+  opacity: 1;
+  border: 1px solid black;
+  background-color: white;
+  border-right: 0;
+  font-size: 20px;
+  width: 55%;
+  height: 25%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+}
+.search-icon{
+  cursor: pointer;
+}
+.navbar{
+  background-color: lightblue;
+  border-bottom: 1px solid black;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  justify-content: space-between;
+}
+.navbar h3{
+  margin-left: 20px;
+}
+.navbar-search{
+  width: 250px;
+  height: 30px;
+  justify-content: center;
+}
+
+.navbar-search div{
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+}
+.navbar-search input{
+  height: 30px;
+  border: none;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.weather{
+  margin-top: 100px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.weather-today{
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 0px 0px 6px black;
+  padding: 5px;
+  border: 2px solid lightgrey;
+  background-image: url(images/landscape.webp);
+  background-size: cover;
+  height: 350px;
+  width: 35%;
+}
+.weather-today-up{
+  width: 100%;
+  justify-content: space-between;
+}
+.weather-today-down{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.weather-today-item{
+  font-size: 16px;
+  justify-content: space-around;
+}
+.icon{
+  width: 23px;
+  height: 23px;
+  margin-right: 5px;
+}
+.city{
+  font-size: 3em;
+  margin-bottom: 25px;
+}
+.future-days{
+  margin-top: 10px;
+  justify-content: space-between;
+  height: 160px;
+  width: 35%;
+}
+.future-days-day{
+  border: 2px solid lightgrey;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: transform 0.5s;
+}
+.future-days-day:hover{
+  box-shadow: 7px 7px 7px black;
+  transform: translateY(-10px);
+}
+.future-icon{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.future-icon:hover{
+  color: gray;
+}
+.future-days-temp{
+  width: 90%;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.future-days-temp-maxmin{
+  justify-content: center;
+  font-size: 17px;
+  width: 45%;
+}
+.forecast{
+  border: 4px solid white;
+  border-radius: 8px;
+  width: 35%;
+  height: 1045px;
+}
+.forecast-hour{
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.forecast-title{
+  text-align: center;
+}
+.forecast-hour-part{
+  width: 100px;
+  justify-content: space-around;
+}
+.forecast-hour-part, .forecast-hour, .future-days-temp-maxmin, .future-days-temp, .future-days-day, .future-days, .weather-today-item, .weather-today-up
+,.weather-today, .weather, .navbar-search, .navbar-search div, .navbar, .main-div-ui-inputs-btn, .main-div-ui-title, .main-div-ui-search, .main-div-ui, .main-div{
+  display: flex;
+  align-items: center;
+}
+
+.forecast-hour, .future-days-day, .main-div-ui{
+  background-color: rgba(255, 255, 255, .7);
+}
+.forecast, .future-days-day, .weather-today, .main-div-ui{
+  box-shadow: 5px 5px 5px black;
+}
